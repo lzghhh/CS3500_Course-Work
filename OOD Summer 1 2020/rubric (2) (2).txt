@@ -1,0 +1,29 @@
+
+ Class design/interface issues:
+  
+ -5 pts (each, total up to -10): if they added or changed anything in Model or Controller interface
+ 
+ -2 pts (up to -4 pts): each method that is replicated exactly in the old model and their new model.
+ 
+ -2 pt (up to -6 pts): if part of their methods in new model are identical to something they did in the old model (leave comment telling them they should have refactored it into another method). (check for validMove, move, isGameOver and possibly getGameState). Ignore similarities that cannot be abstracted without having awkward helpers
+ 
+ -3 pts: if their controller playGame is still not factored into helper methods, and is unwieldy/long.
+ 
+ -2 pts: for each instance variable in either model or controller that is not private or protected
+ 
+ -1 pt (up to -4 pts): one constructor largely replicating the code in another constructor (instead of calling the other constructor)
+ 
+ -2 pts : subclass constructors initializing fields inherited from abstract/parent class (even though parent class could have done this). OK if this is done in a helper called from the parent constructor but is defined in subclass. 
+ 
+Leave 0 point comments for any other design limitations you see.
+ 
+ Code commenting:
+
+ -3 pts : their new model does not have any (or not informative) javadoc above the class about how  about what the model does.
+ 
+ 
+ Code clarity:
+ 
+ -0 pts: "code clarity" complaint if the interface is well-documented, a method isn't, *and* it isn't marked as @Override.
+  
+ 

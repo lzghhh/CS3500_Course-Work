@@ -1,0 +1,93 @@
+load C:\Users\ASUS\Desktop\ppm.ppm ppm
+
+load C:\Users\ASUS\Desktop\oodjpg.jpg jpg
+
+load C:\Users\ASUS\Desktop\oodpngtransparent.png png
+
+load C:\Users\ASUS\Desktop\bmp.bmp bmp 
+
+greyscale ppm ppm-geryscale
+
+blur ppm ppm-blur 
+
+blur ppm-blur ppm-blur
+
+sepia ppm ppm-sepia
+
+sharpen ppm ppm-sharpen
+
+sharpen ppm-sharpen ppm-sharpen
+
+save C:\Users\ASUS\Desktop\res\ppm-sepia.png  ppm-sepia
+
+save C:\Users\ASUS\Desktop\res\ppm-greyscale.bmp  ppm-greyscale
+
+save C:\Users\ASUS\Desktop\res\ppm-sepia.jpg  ppm-blur
+
+save C:\Users\ASUS\Desktop\res\ppm-sharpen.ppm  ppm-sharpen
+
+sepia jpg jpg-sepia
+
+greyscale jpg jpg-greyscale
+
+sharpen jpg jpg-sharpen
+
+sharpen jpg-sharpen  jpg-sharpen
+
+blur jpg jpg-blur
+
+blur jpg-blur  jpg-blur
+
+save C:\Users\ASUS\Desktop\res\jpg-sepia.png  jpg-sepia
+
+save C:\Users\ASUS\Desktop\res\jpg-greyscale.bmp  jpg-greyscale
+
+save C:\Users\ASUS\Desktop\res\jpg-blur.jpg  jpg-blur
+
+save C:\Users\ASUS\Desktop\res\jpg-sharpen.ppm jpg-sharpen
+
+save C:\Users\ASUS\Desktop\res\jpg-sharpen.jpg jpg-sharpen
+
+sepia png png-sepia
+
+greyscale png png-greyscale
+
+sharpen png png-sharpen
+
+sharpen png-sharpen png-sharpen
+
+blur png png-blur
+
+blur png-blur  png-blur
+
+save C:\Users\ASUS\Desktop\res\png-sepia.png png-sepia
+
+save C:\Users\ASUS\Desktop\res\png-greyscale.bmp  png-greyscale
+
+save C:\Users\ASUS\Desktop\res\png-blur.jpg png-blur
+
+save C:\Users\ASUS\Desktop\res\png-sharpen.ppm png-sharpen
+
+save C:\Users\ASUS\Desktop\res\png-sharpen.png png-sharpen
+
+sepia bmp bmp-sepia
+
+greyscale bmp bmp-greyscale
+
+sharpen bmp bmp-sharpen
+
+sharpen bmp-sharpen bmp-sharpen
+
+blur bmp bmp-blur
+
+blur bmp-blur  bmp-blur
+
+save C:\Users\ASUS\Desktop\res\bmp-sepia.png bmp-sepia
+
+save C:\Users\ASUS\Desktop\res\bmp-greyscale.bmp  bmp-greyscale
+
+save C:\Users\ASUS\Desktop\res\bmp-blur.jpg bmp-blur
+
+save C:\Users\ASUS\Desktop\res\bmp-sharpen.ppm bmp-sharpen
+
+save C:\Users\ASUS\Desktop\res\bmp-sharpen.bmp bmp-sharpen

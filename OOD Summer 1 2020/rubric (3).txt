@@ -1,0 +1,38 @@
+
+ Class design/interface issues:
+ 
+ -1 interface does not declare that playGame throws IllegalStateException
+ -1 interface does not declare that playGame throws IllegalArgumentException
+  
+ -2 pts (each, total up to -8): each public method in Controller that is not part of the interface (excluding constructor) or added to the interface (it should contain only playGame)
+
+ -2 pts (each, total up to -8): each non-private field in the controller (OK if it is not public *and* it is justified in documentation)
+ 
+ Serious design issues:
+ 
+ (upto) -6 pts: the playgame method implements everything itself with little to no helper methods
+ 
+ -3 pts (upto -6 pts): there is code replication beyond 1-2 lines of code in (a) playgame method (b) the move method of model 
+ 
+ -3 pts: playGame loops are set up in an unwieldy way (e.g. managing game play and inputs in one loop, using flags, break and continue to control flow (using break, continue by itself is not wrong, look at purpose). 
+ 
+ -1 pts (upto -2): private helper methods return something by mutation of a parameter rather than a return type.
+
+ -5 use of an exception for something other than an exceptional case; example: exception thrown and caught just to handle quitting the game
+ 
+ -2 pts: there is use of System.out.print/println or printStackTrace anywhere in the controller/model public methods (except possibly a main that was not needed)
+ 
+ Code commenting:
+ 
+ -3 pts (each, total up to -6): missing any comments above a class or interface written by the student about what the class represents
+ 
+ -2 pts (each, up to -4): class or interface comment is present but uninformative (merely declares that it implements the interface or that it  represents a solitaire controller, etc.)
+ 
+ -2 pts (each, total up to -4): missing any comments for what a public method is supposed to be doing.  (It is ok to not comment an implementation if the interface has good comments that are enough for the implementation). This applies only to code, not tests. 
+ 
+ -1 pts (each, total up to -3): comment is present, but not informative about what the method is doing (e.g. a test method that expects an exception, but does not say what it is looking for). For tests, do not take points off if they are named descriptively with no comments
+ 
+ 
+ Code clarity:
+ 
+ -0 pts: "code clarity" complaint if the interface is well-documented, a method isn't, *and* it isn't marked as @Override.

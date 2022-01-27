@@ -1,0 +1,86 @@
+//////////model interface
+
+-15 pts there is no model interface
+
+-3 pts (up to 6pts) model interface javadoc comments are
+ trivial or useless (e.g. "interface for animation model"
+ boilerplate). It should explain the purpose of the interface. NOTE:
+ if they document this sort of information in their README, then -1.5
+ instead, and leave a comment that the material in the README belongs
+ in javadocs as well.
+
+-3 pts neither model interface nor implementation mention clearly in
+ comments what one instance of the model represents (is it an
+ animation, is it a collection of animations, something else?).
+
+-2 pts each: if the model is missing a method for observing shapes
+ (e.g. getShapes), observing motions (e.g. getMotionsForShape).  -1pt
+ if the method is present but returns a String rather than a
+ structured object (except for the required
+ dump-everything-to-a-string method).
+
+-2 pts each: if the model is missing a method for adding shapes,
+ (removing shapes -1pt), adding a motion, (removing a motion -1pt), or
+ other key methods.  -1pt if the method is present but particularly
+ cumbersome to use, or requires the client of the model to construct
+ the shape or motion themselves. 
+ 
+-2 pts: if the model assumes that all shapes and animations are known before
+model is created (i.e. only constructor takes them as input, not other methods).
+
+-1 pt (up to -5 pts) each method in model interface where
+ javadoc but does not explain what it is or does not
+ have a list of parameters and their explanations.  Again, boilerplate
+ javadoc is not sufficient.
+
+
+///////////model implementation
+
+-3 pts model implementation javadoc comments are trivial/useless
+ (e.g. "this implements X interface")
+
+Apply EITHER of below for a given public method:
+  -3 pts (no more than -9 pts) for each public method in model that is
+     not declared in its interface (except constructors).
+  -3 pts (no more than -9 pts) for each public method in model that 
+     does not seem to correspond to a useful operation (i.e. something
+     for testing, something that exposes an unnecessary functionality,
+     a helper, etc.)
+
+-4 pts if any getter method directly returns a reference to an
+ internal reference-type instance variable (unless the relevant class
+ is documented as part of the public model interface)
+
+-1 pt for each non-private field in model implementation
+
+-2 if the model implementation destructively mutates shapes to "move"
+ them to a particular time. It should hopefully be the case that
+ their models can always produce the debug string output, regardless
+ of how they've manipulated the model...
+
+-2 not the previous (not destructively mutating shapes), but model has a
+ currentTick or speed, or is otherwise taking the Controller's responsibility
+ for timing
+
+////////////////miscellaneous
+
+-5 pts for each interface other than model interface that does not
+ have useful javadoc comments explaining what it represents (max -5 pts --
+ they should not be penalized for having more interfaces)
+
+-3 pts for each class that does not have javadoc style comments
+ explaining what it represents (whether it implements a documented
+ interface or not) (max -3 pts -- again already dinged once for model
+ above)
+
+-1 pt for each public variable in class (exception is if class is very
+ small, written solely to group variables together and has at most a
+ constructor, e.g. Points or Dimensions or Colors or something like that)
+
+-3 pts README does not adequately explain model interface and
+ implementation (their purpose)
+
+-2 pts README does not explain the purpose of other classes/interfaces
+
+-6 pts no README supplied
+-3 pts README supplied via email after the fact but otherwise OK

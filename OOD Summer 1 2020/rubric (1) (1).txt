@@ -1,0 +1,31 @@
+
+ Class design/interface issues:
+  
+ -2 pts (each, total up to -8): each public method in MarbleSolitaireModelImpl that is not part of the interface MarbleSolitaireModel (other than constructor) OR each extra method added to the provided interface
+ 
+ -2 pts (each, total up to -8): each instance variable that is not private or protected in MarbleSolitaireModelImpl class
+ 
+ -2 pts: if their test class is not in the default package
+ 
+ Serious design issues:
+  
+ -2 pts: the board representation is unwieldy or easily allows errors (e.g. using string/char to represent board, using a class for every slot but inside it has string/char)
+ 
+ (upto) -3 pts: there is code replication beyond 1-2 lines of code (e.g. the move method and isGameOver checks for move validity in largely the same way, but replicates code. Or the checking of whether position is invalid is replicated everywhere). Use this if mistake does not fit in any of the above cases.
+ 
+ -0 pts warning: bad instance variable names, not initializing variables in constructors explicitly (relying on default initializations)
+ 
+ Code commenting:
+ 
+ -2 pts (each, total up to -4): comments above a class or interface written by the student about what the class represents are not informative. Does not apply to tests, if test names are descriptive.
+
+ 
+ -2 pts (each, total up to -4): comment is present, but not informative about what the method is doing (e.g. a test method that expects an exception, but does not say what it is looking for). Does not apply to tests, if test names are descriptive.
+ 
+ 
+ Code clarity:
+ 
+ -0 pts: "code clarity" complaint if the interface is well-documented, a method isn't, *and* it isn't marked as @Override.
+ 
+  
+ 

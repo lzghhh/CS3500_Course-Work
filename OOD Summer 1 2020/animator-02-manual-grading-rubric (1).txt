@@ -1,0 +1,78 @@
+Submissions: 25 points
+
+Directory structure: 3 points
+	-1 for each folder (src, test, resources) not present
+
+README: 5 points
+	-5 No README file
+	-3 README file is included, not very descriptive
+	-0 README file is included and mentions design changes
+	
+text-transcript.txt: 4 points
+	-4 no text-transcript.txt included
+	-2 text-transcript.txt included, but does not look right
+	-0 file submitted, looks  OK
+	
+toh-at-20.svg: 3 points
+	-3 no file included
+	-2 file included, but does not run in browser
+	-0 screenshot included, figures present, rendering OK
+	
+JAR file: 10 points
+	-10 no JAR file submitted
+	-5 JAR file submitted, does not run
+	-3 JAR file submitted, does not take file name or view as command-line arguments (assumes default, etc.)
+	-0 JAR file submitted, runs correctly for all views and any one input file
+
+----
+
+View interface and design: 10 points
+	-10 no view interface present
+	-5 view interface is present, contains methods for "start" or "display" and other methods to get the data in some way, but view implementations contain other public methods not part of any interface (other than constructors)
+	-0 view methods as above, and all view implementations implement the interface and only have its methods as public (other than constructors). Its possible that they have other interfaces.
+	
+----
+
+Text view: +5 points
+	-5 no separate text view class
+	-3 text view is present, but model continues to do the printing or string building
+	-2 text view implements string building but prints it directly (i.e. does not work with different output streams)
+	-0 text view implements string building and prints to Appendable (or something other than System.out)
+	
+----
+
+visual View: 25 points (grade with buildings.txt)
+	-20 no separate visual view class
+	-15 visual view is present, but does not work
+	-5 shapes are not drawn correctly
+    -5 shapes do not move in animation correctly
+    -5 shapes do not change color correctly
+    -5 everything works but drawing code is messy and poorly designed
+    -5 big-bang file does not work smoothly
+	-0 visual view works correctly, drawing code is designed reasonably well (neat loops or helper functions)
+	
+----
+
+SVG View: 20 points
+	-20 no separate SVG view class
+	-10 SVG view creates SVG, but does not work correctly in a browser
+	-5 SVG view creates SVG which works correctly, but speed is incorrect
+	-5 SVG view only prints output or saves to a file, does not work with general output (like Appendable)
+    -0 SVG view plays song correctly with correct tempo
+
+----
+
+Testing: 10 points
+
+	-10 no testing whatsoever
+	-7 only JUnit tests for text view are present, test correctly
+	-5 JUnit tests for text and SVG view are present, but do not test correctly (pick 1-2 randomly and read)
+	-0 JUnit tests for text and SVG view are present, and test correctly (pick 1-2 randomly and read)
+
+----
+	
+Commenting: 15 points
+	-3 pts: the view interface does not document what each method and parameters are
+	-2 pts (up to -6):  for each view class that does not have a descriptive comment above it
+	-2 pts (up to -6): for each test case that does not document what it is testing
+    -1 pts each: every use of a class name (e.g. ArrayList) where they could have used an interface name (e.g. List)

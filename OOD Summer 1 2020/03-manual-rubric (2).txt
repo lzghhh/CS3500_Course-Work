@@ -1,0 +1,64 @@
+Submissions: 15 points
+
+README: (general thresholds -- pick one)
+    -10 No README file
+    -5 README file is included, not very descriptive
+    -0 README file is included and explains design adequately
+
+screenshot of editor view: (general thresholds -- pick one)
+    -3 no screenshot included
+    -2 screenshot included, UI is not seen or no animation is visible
+    -0 screenshot included, everything OK
+
+JAR file: (general thresholds -- pick one)
+    -7 no JAR file submitted
+    -4 JAR file submitted, does not run
+    -3 JAR file submitted, does not read command-line arguments for editor view correctly OR expects user to type in stdin instead of command-line arguments
+    -0 JAR file submitted, correctly runs editor view with buildings.
+----
+Program behavior: 30 points (individual deductions -- use all that apply)
+(Recommended: test with toh-3 which is reasonably sized)
+    -5 one or more functions not obvious from UI (explanation in a menu item/button are OK. Having to read code/README: not OK)
+    -5 program does not play animation
+
+    -2 no way to change speed
+    -1 Speed change is not effective immediately
+    -2 no way to pause and resume
+    -2 no way to loop back
+    -2 enabling/disabling looping requires program restart
+    -2 no way to restart animation (in non-loop mode)
+    -4 no way to add shapes
+    -2 adding shapes with duplicate names isn't prevented
+    -4 no way to delete shapes
+    -4 no way to add keyframes
+    -2 no way to add keyframes before first-existing or after
+       last-existing keyframe
+    -2 inserted keyframe isn't interpolated as expected
+    -4 no way to delete keyframes
+    -5 no way to edit keyframes
+----
+//Testing: 10 points (individual deductions -- use all that apply)
+//    -3 No JUnit tests for any handler/listener
+//    -2 No JUnit tests for controller
+//    -5 Tests missing for earlier parts of the project
+----
+Design: 7 points (individual deductions -- use all that apply)
+    -4 controller does not hold references to model and view. View holds reference to controller or model
+    -3 control does not come to controller upon key or mouse press or
+       other UI interaction (NOTE: the view can handle low-level key
+       or mouse events, if it then raises higher-level events that the
+       controller *can* listen to)
+    -1 the view exposes events only as String messages, or some other
+       low-level event, rather than something better suited for this
+       specific project
+
+Commenting: 8 points
+    -2 comment explaining composite view above class is not descriptive 
+    -2 comment explaining controller above class is not descriptive
+    -4 general lack of clarity of code&documentation throughout the project, as needed
+
+//Extra Credit:
+//8 points: Able to save in both SVG and text format, using file chooser; able to load using file chooser.
+//4 points: Able to save but not load, or load but not save.
+//2 points: Able to save in only one format (SVG or text).
+//The required functionality must be implemented to get extra credit. The required functionality does not have to be perfect for eligibility, but must exist.

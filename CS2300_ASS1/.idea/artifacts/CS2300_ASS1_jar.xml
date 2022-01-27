@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="CS2300_ASS1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CS2300_ASS1_jar</output-path>
+    <root id="root">
+      <element id="archive" name="CS2300_ASS1.jar">
+        <element id="module-output" name="CS2300_ASS1" />
+      </element>
+    </root>
+  </artifact>
+</component>

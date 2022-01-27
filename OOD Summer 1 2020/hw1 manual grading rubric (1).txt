@@ -1,0 +1,17 @@
+ -1 pt (total): variable names that do not accurately represent what it stands for (limit only to parameter names and instance variables, not local variables)
+ 
+ -1 pts (each, total up to -4): each instance variable that is not private in Webpage class 
+ 
+ -2 pts (each, total up to -4): missing any comments for what a public method is supposed to be doing.  (It is ok to not comment an implementation if the interface has good comments)
+ 
+ -2 pts (each, total up to -4): comment is present, but not informative about what the method is doing (e.g. a test method that expects an exception, but does not say what it is looking for)
+ 
+ -2 pt (total): code that is convoluted without a good reason. Examples are: case statements smartly arranged to avoid breaks for each, conditions that are more complicated than they need to be.
+ 
+ Do not take points off if it uses ifs rather than switch, but leave a 0 point warning.
+ 
+ -1 pt (each, total up to -3): instance variables that are not initialized anywhere (-0 pt warning if they are initialized at the time of declaration instead of constructor)
+ 
+ -1 pt (each, total up to -3): unwanted uncommented print statements, even if used for debugging
+ 
+ -5 pts: the Duration interface was changed in any fashion
